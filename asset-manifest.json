@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rechcreatives/static/css/main.ce49f253.css",
+    "main.js": "/rechcreatives/static/js/main.0e988fbd.js",
+    "index.html": "/rechcreatives/index.html",
+    "main.ce49f253.css.map": "/rechcreatives/static/css/main.ce49f253.css.map",
+    "main.0e988fbd.js.map": "/rechcreatives/static/js/main.0e988fbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce49f253.css",
+    "static/js/main.0e988fbd.js"
+  ]
+}
