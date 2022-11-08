@@ -69,7 +69,7 @@ export default function DesignServices() {
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             >
               <Grid item xs={6}>
-                <Card item sx={{ display: "flex", alignContent: "center" }}>
+                <Card sx={{ display: "flex", alignContent: "center" }}>
                   <Grid
                     container
                     rowSpacing={1}
@@ -127,7 +127,7 @@ export default function DesignServices() {
                 </Card>
               </Grid>
               <Grid item xs={6}>
-                <Card item sx={{ display: "flex", alignContent: "center" }}>
+                <Card sx={{ display: "flex", alignContent: "center" }}>
                   <Grid
                     container
                     rowSpacing={1}
@@ -193,7 +193,7 @@ export default function DesignServices() {
               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             >
               <Grid item xs={6}>
-                <Card item sx={{ display: "flex", alignContent: "center" }}>
+                <Card sx={{ display: "flex", alignContent: "center" }}>
                   <Grid
                     container
                     rowSpacing={1}
@@ -251,7 +251,7 @@ export default function DesignServices() {
                 </Card>
               </Grid>
               <Grid item xs={6}>
-                <Card item sx={{ display: "flex", alignContent: "center" }}>
+                <Card sx={{ display: "flex", alignContent: "center" }}>
                   <Grid
                     container
                     rowSpacing={1}
