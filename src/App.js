@@ -1,4 +1,3 @@
-import { Home } from "@mui/icons-material";
 import React from "react";
 import "./App.css";
 import Header from "./components/0common/1Header";
@@ -12,8 +11,14 @@ import Workflow from "./components/0common/3Workflow";
 function App() {
   return (
     <div>
-      <Header />
-      <Home />
+      <div className="main">
+        <div className="overlay"></div>
+        <video src={"/homebg.mp4"} autoPlay loop muted />
+        <div className="content">
+          <Header />
+          <Home />
+        </div>
+      </div>
       <Work />
       <MoreWorks />
       <DesignServices />

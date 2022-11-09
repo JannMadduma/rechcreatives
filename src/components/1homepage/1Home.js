@@ -1,14 +1,23 @@
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Divider,
+  Grid,
+  styled,
+  Typography,
+} from "@mui/material";
 
 export default function Home() {
+  const TypographyS = styled(Typography)(() => ({
+    padding: "10px",
+    textAlign: "center",
+    color: "white",
+    fontFamily: "Poppins",
+    fontWeight: "900",
+    fontSize: "50px",
+  }));
   return (
-    <div
-      style={{
-        backgroundColor: "#D3B3F2",
-        backgroundSize: "cover",
-        height: "100%",
-      }}
-    >
+    <div>
       <Box
         sx={{
           height: "100%",
@@ -38,39 +47,45 @@ export default function Home() {
                 }}
               >
                 <Box>
-                  <Typography
-                    component="h4"
-                    variant="h4"
-                    align="left"
-                    color="text.primary"
+                  <TypographyS
                     sx={{
-                      color: "#353C42",
-                      fontWeight: "bold",
-                      fontFamily: "Poppins, sans-serif;",
+                      display: "flex",
+                      "& div": {
+                        color: "white",
+                        fontFamily: "Poppins",
+                        fontWeight: "900",
+                        marginRight: "-3px",
+                        textShadow: "0px 0px 9px rgb(0 0 0 / 74%)",
+                        fontSize: "100px",
+                        padding: "0px",
+                      },
                     }}
                   >
-                    WELCOME
-                  </Typography>
-                  <Typography
-                    component="h2"
-                    variant="h2"
-                    align="left"
-                    color="text.primary"
+                    <div>W</div>
+                    <div>E</div>
+                    <div>L</div>
+                    <div>C</div>
+                    <div>O</div>
+                    <div>M</div>
+                    <div>E</div>
+                  </TypographyS>
+                  <TypographyS
                     gutterBottom
                     sx={{
-                      fontSize: "80px",
-                      color: "#82C8E1",
-                      fontWeight: "bold",
+                      textAlign: "left",
                     }}
                   >
                     Hi, I am Rech
-                  </Typography>
+                  </TypographyS>
                   <Divider color="#02B4FE" variant="fullWidth" />
                   <br />
                   <Typography
-                    variant="h6"
-                    align="left"
-                    color="text.secondary"
+                    sx={{
+                      textAlign: "left",
+                      color: "white",
+                      fontFamily: "Poppins",
+                      fontSize: "25px",
+                    }}
                     paragraph
                   >
                     I create business templates to help start-ups,
