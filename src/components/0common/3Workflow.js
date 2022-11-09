@@ -1,153 +1,158 @@
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  Container,
+  Divider,
+  Grid,
+  Stack,
+  styled,
+  Typography,
+} from "@mui/material";
 import * as React from "react";
-import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import MobileStepper from "@mui/material/MobileStepper";
-import Typography from "@mui/material/Typography";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
-import Container from "@mui/material/Container";
-import { IconButton } from "@mui/material";
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
-const images = [
-  {
-    imgPath: "img/clientRev.png",
+const BootstrapButton = styled(Button)({
+  boxShadow: "none",
+  textTransform: "none",
+  fontSize: 16,
+  padding: "6px 12px",
+  border: "1px solid",
+  lineHeight: 1.5,
+  backgroundColor: "#3F9BA6",
+  borderColor: "#3F9BA6",
+  "&:hover": {
+    backgroundColor: "#3F9BA6",
+    borderColor: "#3F9BA6",
+    boxShadow: "none",
   },
-  {
-    imgPath: "img/clientRev.png",
+  "&:active": {
+    boxShadow: "none",
+    backgroundColor: "#3F9BA6",
+    borderColor: "#3F9BA6",
   },
-  {
-    imgPath: "img/clientRev.png",
+  "&:focus": {
+    boxShadow: "#3F9BA6",
   },
-  {
-    imgPath: "img/clientRev.png",
-  },
-];
-
-function Workflow() {
-  const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = images.length;
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  const handleStepChange = (step) => {
-    setActiveStep(step);
-  };
+});
+export default function DesignServices() {
+  const TypographyS = styled(Typography)(() => ({
+    padding: "10px",
+    textAlign: "center",
+    color: "white",
+    fontFamily: "Raleway",
+    fontWeight: "900",
+    fontSize: "50px",
+  }));
 
   return (
     <div
       style={{
-        backgroundColor: "#D3B3F2",
-        backgroundSize: "cover",
-        height: "100%",
+        paddingBottom: "50px",
       }}
     >
+      <Box>
+        <TypographyS>How can I help you...</TypographyS>
+      </Box>
       <Box
         sx={{
           height: "100%",
         }}
       >
-        <Container>
-          <Typography
-            component="div"
-            sx={{
-              padding: "10px",
-              textAlign: "center",
-              color: "white",
-              fontFamily: "Raleway",
-              fontWeight: "900",
-              fontSize: "50px",
-            }}
-          >
-            Project Work Flow
-          </Typography>
-          <Box sx={{ maxWidth: "100%", flexGrow: 1, position: "relative" }}>
-            <AutoPlaySwipeableViews
-              axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-              index={activeStep}
-              onChangeIndex={handleStepChange}
-              enableMouseEvents
-              style={{ maxWidth: "100%" }}
+        <Container sx={{ height: "100%" }}>
+          <Box>
+            <Grid
+              container
+              rowSpacing={1}
+              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             >
-              {images.map((step, index) => (
-                <div key={step.label}>
-                  {Math.abs(activeStep - index) <= 2 ? (
-                    <Box
-                      component="img"
+              <Grid item xs={4}>
+                <Card
+                  sx={{
+                    display: "flex",
+                    alignContent: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <TypographyS
                       sx={{
-                        height: "100%",
-                        display: "block",
-                        maxWidth: "100%",
-                        overflow: "hidden",
-                        width: "100%",
+                        color: "#3F9BA6",
+                        fontSize: "25px",
                       }}
-                      src={step.imgPath}
-                      alt={step.label}
-                    />
-                  ) : null}
-                </div>
-              ))}
-            </AutoPlaySwipeableViews>
-            <MobileStepper
-              sx={{
-                backgroundColor: "transparent",
-                marginTop: "-230px",
-                width: "100%",
-                position: "absolute",
-                padding: 0,
-              }}
-              variant={false}
-              steps={maxSteps}
-              position="static"
-              activeStep={activeStep}
-              nextButton={
-                <IconButton
-                  aria-label="delete"
-                  onClick={handleNext}
-                  disabled={activeStep === maxSteps - 1}
-                  sx={{
-                    background: "#54B5BF",
-                  }}
-                >
-                  {theme.direction === "rtl" ? (
-                    <ArrowBackIosNewIcon />
-                  ) : (
-                    <ArrowForwardIosIcon />
-                  )}
-                </IconButton>
-              }
-              backButton={
-                <IconButton
-                  aria-label="delete"
-                  onClick={handleBack}
-                  disabled={activeStep === 0}
-                  sx={{
-                    background: "#54B5BF",
-                  }}
-                >
-                  {theme.direction === "rtl" ? (
-                    <ArrowForwardIosIcon />
-                  ) : (
-                    <ArrowBackIosNewIcon />
-                  )}
-                </IconButton>
-              }
-            />
+                    >
+                      COMPLETE
+                    </TypographyS>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                      <BootstrapButton variant="contained" disableRipple>
+                        Step
+                      </BootstrapButton>
+                    </div>
+                    <Typography
+                      component="div"
+                      sx={{
+                        fontFamily: "Raleway",
+                        fontSize: "12px",
+                        fontWeight: "bold",
+                        padding: "20px 0",
+                      }}
+                    >
+                      Completion & Submission
+                    </Typography>
+                    <Typography
+                      component="div"
+                      sx={{
+                        fontFamily: "Raleway",
+                        fontSize: "12px",
+                        padding: "20px 0",
+                      }}
+                    >
+                      Once you are satisfied with the design, I now enter the
+                      last stage of the project. I polish off the final
+                      product/design to ready it for turnover and ask you to
+                      send the remainder of the payment.
+                    </Typography>
+                    <Divider />
+                    <Typography
+                      component="div"
+                      sx={{
+                        fontFamily: "Raleway",
+                        fontSize: "12px",
+                        padding: "20px 0",
+                      }}
+                    >
+                      Milestones Involved
+                    </Typography>
+                    <ul>
+                      <li>Polishing of design output(s)</li>
+                      <li>50% Remainder Payment</li>
+                      <li>Transfer and turn-over of files</li>
+                      <li>Feedback and Review</li>
+                    </ul>
+                    <Typography
+                      component="div"
+                      sx={{
+                        fontFamily: "Raleway",
+                        fontSize: "12px",
+                        padding: "20px 0",
+                      }}
+                    >
+                      Client & Designer Work
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
           </Box>
         </Container>
       </Box>
     </div>
   );
 }
-
-export default Workflow;

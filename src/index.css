@@ -15,10 +15,19 @@ code {
 * {
   margin: 0;
   padding: 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .main {
+  width: 100%;
+  height: 200vh;
+}
+
+.main2 {
+  width: 100%;
+  height: 200vh;
+}
+
+.main3 {
   width: 100%;
   height: 100vh;
 }
@@ -32,8 +41,33 @@ video {
 .content {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200%;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content2 {
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  top: 0;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding-top: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,8 +80,12 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 200%;
   background-color: 'transparent';
+}
+
+ul {
+  font-weight: 100;
 }
 
 

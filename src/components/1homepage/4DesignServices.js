@@ -47,9 +47,6 @@ export default function DesignServices() {
   return (
     <div
       style={{
-        backgroundColor: "#D3B3F2",
-        backgroundSize: "cover",
-        height: "100%",
         paddingBottom: "50px",
       }}
     >

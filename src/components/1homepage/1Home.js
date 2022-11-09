@@ -27,7 +27,7 @@ export default function Home() {
           <Grid
             container
             spacing={2}
-            sx={{ height: "100%", alignContent: "center" }}
+            sx={{ height: "100%", alignContent: "center", paddingTop: "150px" }}
           >
             <Grid item xs={6} sx={{ display: "flex", alignItems: "center" }}>
               <Box
@@ -77,7 +77,7 @@ export default function Home() {
                   >
                     Hi, I am Rech
                   </TypographyS>
-                  <Divider color="#02B4FE" variant="fullWidth" />
+
                   <br />
                   <Typography
                     sx={{

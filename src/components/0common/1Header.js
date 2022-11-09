@@ -1,4 +1,4 @@
-import { Grid, styled, Box, Typography } from "@mui/material";
+import { Grid, styled, Box, Typography, AppBar } from "@mui/material";
 import * as React from "react";
 
 export default function Header() {
@@ -17,12 +17,23 @@ export default function Header() {
   }));
 
   return (
-    <React.Fragment>
-      <div>
+    <div>
+      <AppBar
+        sx={{
+          backgroundColor: "transparent",
+        }}
+        elevation={0}
+        position="absolute"
+      >
         <Grid container>
           <Grid item xs>
             <Item>
               <TypographyS>HOME</TypographyS>
+            </Item>
+          </Grid>
+          <Grid item xs>
+            <Item>
+              <TypographyS>ABOUT</TypographyS>
             </Item>
           </Grid>
           <Grid item xs>
@@ -44,16 +55,21 @@ export default function Header() {
           </Grid>
           <Grid item xs>
             <Item>
-              <TypographyS>REVIEWS</TypographyS>
+              <TypographyS>SERVICES</TypographyS>
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <TypographyS>CONTACT ME</TypographyS>
+              <TypographyS>MY SHOP</TypographyS>
+            </Item>
+          </Grid>
+          <Grid item xs>
+            <Item>
+              <TypographyS>CONTACT</TypographyS>
             </Item>
           </Grid>
         </Grid>
-      </div>
-    </React.Fragment>
+      </AppBar>
+    </div>
   );
 }
