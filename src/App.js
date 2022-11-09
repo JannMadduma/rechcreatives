@@ -14,21 +14,26 @@ import SMTemplates from "./components/3portfolio/1SMTeamplates";
 import SMTemplates2 from "./components/3portfolio/2SMTemplates";
 import Services1 from "./components/4services/1MyServices";
 import Services2 from "./components/4services/2DigitalProducts";
+import { BrowserRouter } from "react-router-dom";
+import ComponentRoute from "./ComponentRoute";
 
 function App() {
   return (
-    <div>
-      <div className="main3">
-        <div className="overlay"></div>
-        <video src={"/homebg.mp4"} autoPlay loop muted />
-        <div className="content3">
-          <Header />
-          <Services1 />
+    <BrowserRouter>
+      <div>
+        <div className="main3">
+          <div className="overlay"></div>
+          <video src={"/homebg.mp4"} autoPlay loop muted />
+          <div className="content3">
+            <Header />
+            {/* <Services1 /> */}
+            <ComponentRoute />
+          </div>
+          <Footer />
         </div>
+        {/* <Services2 /> */}
       </div>
-      <Services2 />
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

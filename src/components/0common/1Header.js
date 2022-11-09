@@ -1,5 +1,6 @@
 import { Grid, styled, Box, Typography, AppBar } from "@mui/material";
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const Item = styled(Typography)(() => ({
@@ -28,12 +29,16 @@ export default function Header() {
         <Grid container>
           <Grid item xs>
             <Item>
-              <TypographyS>HOME</TypographyS>
+              <Link to={"/home"}>
+                <TypographyS>HOME</TypographyS>
+              </Link>
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <TypographyS>ABOUT</TypographyS>
+              <Link to={"/about"}>
+                <TypographyS>ABOUT</TypographyS>
+              </Link>
             </Item>
           </Grid>
           <Grid item xs>
