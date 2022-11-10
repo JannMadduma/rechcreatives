@@ -42,36 +42,38 @@ export default function Header() {
             </Item>
           </Grid>
           <Grid item xs>
-            <Item>
+            <Link to={"/portfolio"}>
               <TypographyS>PORTFOLIO</TypographyS>
-            </Item>
+            </Link>
           </Grid>
           <Grid item xs>
-            <Box
-              sx={{
-                alignItems: "center",
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img style={{ width: "50%" }} src="img/logo.png" />
-            </Box>
+            <Link to={"/home"}>
+              <Box
+                sx={{
+                  alignItems: "center",
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <img style={{ width: "50%" }} src="img/logo.png" />
+              </Box>
+            </Link>
           </Grid>
           <Grid item xs>
-            <Item>
+            <Link to={"/services"}>
               <TypographyS>SERVICES</TypographyS>
-            </Item>
+            </Link>
           </Grid>
           <Grid item xs>
-            <Item>
+            <Link to={"/myshop"}>
               <TypographyS>MY SHOP</TypographyS>
-            </Item>
+            </Link>
           </Grid>
           <Grid item xs>
-            <Item>
+            <Link to={"/contact"}>
               <TypographyS>CONTACT</TypographyS>
-            </Item>
+            </Link>
           </Grid>
         </Grid>
       </AppBar>

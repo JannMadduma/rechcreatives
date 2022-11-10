@@ -36,7 +36,7 @@ const BootstrapButton = styled(Button)({
     boxShadow: "#3F9BA6",
   },
 });
-export default function DesignServices() {
+export default function Workflow() {
   const TypographyS = styled(Typography)(() => ({
     padding: "10px",
     textAlign: "center",

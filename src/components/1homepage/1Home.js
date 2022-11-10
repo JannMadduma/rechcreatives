@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 
-export default function Home() {
+export default function Hero() {
   const TypographyS = styled(Typography)(() => ({
     padding: "10px",
     textAlign: "center",

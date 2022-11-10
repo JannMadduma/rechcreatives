@@ -1,6 +1,6 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
 
-export default function About() {
+export default function AboutMe() {
   const TypographyS = styled(Typography)(() => ({
     padding: "10px",
     textAlign: "center",
