@@ -12,3 +12,5 @@ function App() {
 }
 
 export default App;
+
+// "homepage": "http://JannMadduma.github.io/rechcreatives",

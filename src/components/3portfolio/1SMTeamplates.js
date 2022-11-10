@@ -1,20 +1,5 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Container,
-  Divider,
-  Grid,
-  styled,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import * as React from "react";
-import MobileStepper from "@mui/material/MobileStepper";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { IconButton } from "@mui/material";
 
 export default function SMTemplates() {
   return (

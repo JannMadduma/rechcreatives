@@ -1,15 +1,4 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Container,
-  Divider,
-  Grid,
-  styled,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import * as React from "react";
 
 export default function SMTemplates2() {
