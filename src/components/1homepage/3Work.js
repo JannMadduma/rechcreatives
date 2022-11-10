@@ -157,6 +157,23 @@ export default function Work() {
             </Grid>
           </Grid>
           <Grid container>
+            <Grid
+              item
+              xs={12}
+              sx={{ display: "flex", justifyContent: "center" }}
+            >
+              <BootstrapButton variant="contained">
+                <Typography
+                  sx={{ fontSize: "25px" }}
+                  style={{ fontSize: "20px" }}
+                >
+                  SHOW MORE
+                </Typography>
+              </BootstrapButton>
+            </Grid>
+          </Grid>
+
+          <Grid container>
             <Grid item xs={12}>
               <TypographyS>How can I help you...</TypographyS>
             </Grid>
@@ -496,7 +513,7 @@ export default function Work() {
           </Box>
           <Grid container>
             <Grid item xs={12}>
-              <TypographyS>How can I help you...</TypographyS>
+              <TypographyS>Project Work Flow</TypographyS>
             </Grid>
           </Grid>
           <Grid

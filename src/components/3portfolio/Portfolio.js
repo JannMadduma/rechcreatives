@@ -7,14 +7,8 @@ import Header from "../0common/1Header";
 function Portfolio() {
   return (
     <div>
-      <div className="main3">
-        <div className="overlay"></div>
-        <video src={"homebg.mp4"} autoPlay loop muted />
-        <div className="content3">
-          <Header />
-          <SMTemplates />
-        </div>
-      </div>
+      <Header />
+      <SMTemplates />
       <SMTemplates2 />
       <Footer />
     </div>

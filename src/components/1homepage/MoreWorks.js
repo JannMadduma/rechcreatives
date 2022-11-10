@@ -50,11 +50,16 @@ export default function MoreWorks() {
           height: "100%",
         }}
       >
-        <Container sx={{ height: "100%" }}>
+        <Container sx={{ maxWidth: "95%" }} maxWidth={false}>
           <Grid
             container
             spacing={2}
-            sx={{ height: "100%", alignContent: "center" }}
+            sx={{
+              height: "100%",
+              alignContent: "center",
+              paddingTop: "200px",
+              paddingLeft: "50px",
+            }}
           >
             <Grid item xs={12}>
               <TypographyS>Let's bring your business to life!</TypographyS>

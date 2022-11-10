@@ -6,14 +6,8 @@ import MoreWorks from "../1homepage/MoreWorks";
 function Contact() {
   return (
     <div>
-      <div className="main3">
-        <div className="overlay"></div>
-        <video src={"homebg.mp4"} autoPlay loop muted />
-        <div className="content3">
-          <Header />
-          <MoreWorks />
-        </div>
-      </div>
+      <Header />
+      <MoreWorks />
       <Footer />
     </div>
   );

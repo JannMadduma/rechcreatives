@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: "#B86AD9";
 }
 
 code {
@@ -15,6 +16,15 @@ code {
 * {
   margin: 0;
   padding: 0;
+  background-color: "#B86AD9";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/homebg.gif");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .main {

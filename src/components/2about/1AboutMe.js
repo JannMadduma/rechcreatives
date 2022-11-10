@@ -12,14 +12,32 @@ export default function AboutMe() {
 
   return (
     <div>
-      <Box>
-        <Container>
+      <Box
+        sx={{
+          height: "100%",
+        }}
+      >
+        <Container sx={{ maxWidth: "95%" }} maxWidth={false}>
           <Grid
             container
-            spacing={2}
-            sx={{ height: "100%", alignContent: "center" }}
+            rowSpacing={2}
+            columnSpacing={{ xs: 0 }}
+            sx={{
+              height: "100%",
+              alignContent: "center",
+              paddingTop: "200px",
+              paddingLeft: "50px",
+            }}
           >
-            <Grid item xs={6} sx={{ display: "flex", alignItems: "center" }}>
+            <Grid
+              item
+              xs={5}
+              style={{
+                display: "flex",
+                justifyContent: "flex-start",
+                alignItems: "flex-end",
+              }}
+            >
               <Box
                 sx={{
                   alignItems: "center",

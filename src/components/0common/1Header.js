@@ -1,82 +1,112 @@
-import { Grid, styled, Box, Typography, AppBar } from "@mui/material";
+import { Image } from "@mui/icons-material";
+import {
+  Grid,
+  styled,
+  Box,
+  Typography,
+  AppBar,
+  Container,
+} from "@mui/material";
 import * as React from "react";
 import { Link } from "react-router-dom";
 
+const StyledLink = styled(Link)({
+  fontFamily: "Oswald",
+  fontWeight: "semiBold",
+  fontSize: "25px",
+  color: "inherit",
+  textDecoration: "inherit",
+  "&:hover": {
+    textDecoration: "underline",
+  },
+  "&:active": {
+    color: "#EBB6F2",
+  },
+});
+
 export default function Header() {
   const Item = styled(Typography)(() => ({
-    padding: "50px 0px",
     textAlign: "center",
     color: "white",
-  }));
-
-  const TypographyS = styled(Typography)(() => ({
-    textAlign: "center",
-    color: "white",
-    fontWeight: "bold",
-    fontFamily: "Raleway",
-    fontSize: "20px",
   }));
 
   return (
     <div>
-      <AppBar
+      <Box
         sx={{
-          backgroundColor: "transparent",
+          height: "100%",
         }}
-        elevation={0}
-        position="absolute"
       >
-        <Grid container>
-          <Grid item xs>
-            <Item>
-              <Link to={"/home"}>
-                <TypographyS>HOME</TypographyS>
-              </Link>
-            </Item>
-          </Grid>
-          <Grid item xs>
-            <Item>
-              <Link to={"/about"}>
-                <TypographyS>ABOUT</TypographyS>
-              </Link>
-            </Item>
-          </Grid>
-          <Grid item xs>
-            <Link to={"/portfolio"}>
-              <TypographyS>PORTFOLIO</TypographyS>
-            </Link>
-          </Grid>
-          <Grid item xs>
-            <Link to={"/home"}>
-              <Box
+        <AppBar
+          sx={{
+            backgroundColor: "transparent",
+          }}
+          elevation={0}
+          position="absolute"
+        >
+          <Container sx={{ maxWidth: "85%" }} maxWidth={false}>
+            <Grid container>
+              <Grid item xs sx={{ alignSelf: "center" }}>
+                <Item>
+                  <StyledLink to="/home">HOME</StyledLink>
+                </Item>
+              </Grid>
+              <Grid item xs sx={{ alignSelf: "center" }}>
+                <Item>
+                  <StyledLink to={"/about"}>ABOUT</StyledLink>
+                </Item>
+              </Grid>
+              <Grid item xs sx={{ alignSelf: "center" }}>
+                <Item>
+                  <StyledLink to={"/portfolio"}>PORTFOLIO</StyledLink>
+                </Item>
+              </Grid>
+              <Grid
+                item
+                xs
                 sx={{
-                  alignItems: "center",
+                  height: "100%",
                   width: "100%",
-                  display: "flex",
-                  justifyContent: "center",
                 }}
               >
-                <img style={{ width: "50%" }} src="img/logo.png" />
-              </Box>
-            </Link>
-          </Grid>
-          <Grid item xs>
-            <Link to={"/services"}>
-              <TypographyS>SERVICES</TypographyS>
-            </Link>
-          </Grid>
-          <Grid item xs>
-            <Link to={"/myshop"}>
-              <TypographyS>MY SHOP</TypographyS>
-            </Link>
-          </Grid>
-          <Grid item xs>
-            <Link to={"/contact"}>
-              <TypographyS>CONTACT</TypographyS>
-            </Link>
-          </Grid>
-        </Grid>
-      </AppBar>
+                <Item
+                  sx={{
+                    height: "100%",
+                    width: "100%",
+                  }}
+                >
+                  <StyledLink to={"/home"}>
+                    <Box
+                      component="img"
+                      sx={{
+                        height: "85%",
+                        width: "85%",
+                      }}
+                      alt="logo"
+                      src="img/logo.png"
+                    />
+                  </StyledLink>
+                </Item>
+              </Grid>
+              <Grid item xs sx={{ alignSelf: "center" }}>
+                <Item>
+                  <StyledLink to={"/services"}>SERVICES</StyledLink>
+                </Item>
+              </Grid>
+              <Grid item xs sx={{ alignSelf: "center" }}>
+                <Item>
+                  <StyledLink to={"/myshop"}>MY SHOP</StyledLink>
+                </Item>
+              </Grid>
+              <Grid item xs sx={{ alignSelf: "center" }}>
+                <Item>
+                  <StyledLink to={"/contact"}>CONTACT</StyledLink>
+                </Item>
+              </Grid>
+            </Grid>
+          </Container>
+        </AppBar>
+      </Box>
     </div>
   );
 }

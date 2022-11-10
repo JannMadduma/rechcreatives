@@ -6,14 +6,8 @@ import Services1 from "../4services/1MyServices";
 function Myshop() {
   return (
     <div>
-      <div className="main3">
-        <div className="overlay"></div>
-        <video src={"homebg.mp4"} autoPlay loop muted />
-        <div className="content3">
-          <Header />
-          <Services1 />
-        </div>
-      </div>
+      <Header />
+      <Services1 />
       <Footer />
     </div>
   );
