@@ -5,9 +5,12 @@ import ComponentRoute from "./ComponentRoute";
 
 function App() {
   return (
-    <HashRouter>
-      <ComponentRoute />
-    </HashRouter>
+    <div>
+      araer
+      <HashRouter>
+        <ComponentRoute />
+      </HashRouter>
+    </div>
   );
 }
 
