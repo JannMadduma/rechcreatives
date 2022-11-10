@@ -1,4 +1,4 @@
-import { Box, Container, fontWeight } from "@mui/system";
+import { Box, Container } from "@mui/system";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import {

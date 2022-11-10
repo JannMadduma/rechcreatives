@@ -1,5 +1,4 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   const TypographyS = styled(Typography)(() => ({
@@ -42,7 +41,7 @@ export default function Hero() {
                 width: "85%",
               }}
             >
-              <img style={{ width: "100%" }} src="img/rech.png" />
+              <img style={{ width: "100%" }} alt="" src="img/rech.png" />
             </Box>
           </Grid>
           <Grid

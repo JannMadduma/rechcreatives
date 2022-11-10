@@ -1,4 +1,3 @@
-import { Image } from "@mui/icons-material";
 import {
   Grid,
   styled,

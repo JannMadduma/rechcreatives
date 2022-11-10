@@ -44,7 +44,7 @@ export default function AboutMe() {
                   width: "100%",
                 }}
               >
-                <img style={{ width: "100%" }} src="img/rech.png" />
+                <img style={{ width: "100%" }} alt="" src="img/rech.png" />
               </Box>
             </Grid>
             <Grid item xs={6}>
@@ -130,7 +130,7 @@ export default function AboutMe() {
                     justifyContent: "center",
                   }}
                 >
-                  <img style={{ width: "50%" }} src="img/logo.png" />
+                  <img style={{ width: "50%" }} alt="" src="img/logo.png" />
                 </div>
               </Grid>
               <Grid item xs={6} md={3}>
@@ -142,7 +142,7 @@ export default function AboutMe() {
                     justifyContent: "center",
                   }}
                 >
-                  <img style={{ width: "50%" }} src="img/logo.png" />
+                  <img style={{ width: "50%" }} alt="" src="img/logo.png" />
                 </div>
               </Grid>
               <Grid item xs={6} md={3}>
@@ -154,7 +154,7 @@ export default function AboutMe() {
                     justifyContent: "center",
                   }}
                 >
-                  <img style={{ width: "50%" }} src="img/logo.png" />
+                  <img style={{ width: "50%" }} alt="" src="img/logo.png" />
                 </div>
               </Grid>
               <Grid item xs={6} md={3}>
@@ -166,7 +166,7 @@ export default function AboutMe() {
                     justifyContent: "center",
                   }}
                 >
-                  <img style={{ width: "50%" }} src="img/logo.png" />
+                  <img style={{ width: "50%" }} alt="" src="img/logo.png" />
                 </div>
               </Grid>
             </Grid>

@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  styled,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Grid, styled, Typography } from "@mui/material";
 
 export default function Studio() {
   const TypographyS = styled(Typography)(() => ({
@@ -78,7 +71,7 @@ export default function Studio() {
                   width: "100%",
                 }}
               >
-                <img style={{ width: "100%" }} src="img/rech2.png" />
+                <img style={{ width: "100%" }} alt="" src="img/rech2.png" />
               </Box>
             </Grid>
           </Grid>

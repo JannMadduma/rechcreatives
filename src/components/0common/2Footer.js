@@ -53,7 +53,7 @@ export default function Footer() {
                     justifyContent: "center",
                   }}
                 >
-                  <img style={{ width: "50%" }} src="img/logo.png" />
+                  <img style={{ width: "50%" }} alt="" src="img/logo.png" />
                 </div>
               </Grid>
               <Grid item xs={4}>
