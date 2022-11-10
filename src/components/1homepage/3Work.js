@@ -17,6 +17,8 @@ import MobileStepper from "@mui/material/MobileStepper";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { IconButton } from "@mui/material";
+import { autoPlay } from "react-swipeable-views-utils";
+import SwipeableViews from "react-swipeable-views";
 
 const BootstrapButton = styled(Button)({
   boxShadow: "none",
@@ -41,6 +43,8 @@ const BootstrapButton = styled(Button)({
     boxShadow: "#3F9BA6",
   },
 });
+
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
@@ -435,7 +439,7 @@ export default function Work() {
             Client's Feedback
           </Typography>
           <Box sx={{ maxWidth: "100%", flexGrow: 1, position: "relative" }}>
-            <div
+            <AutoPlaySwipeableViews
               axis={theme.direction === "rtl" ? "x-reverse" : "x"}
               index={activeStep}
               onChangeIndex={handleStepChange}
@@ -460,7 +464,7 @@ export default function Work() {
                   ) : null}
                 </div>
               ))}
-            </div>
+            </AutoPlaySwipeableViews>
             <MobileStepper
               sx={{
                 backgroundColor: "transparent",
