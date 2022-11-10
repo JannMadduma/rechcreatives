@@ -23,7 +23,7 @@ function App() {
       <div>
         <div className="main3">
           <div className="overlay"></div>
-          <video src={"/homebg.mp4"} autoPlay loop muted />
+          <video src={"homebg.mp4"} autoPlay loop muted />
           <div className="content3">
             <Header />
             {/* <Services1 /> */}
